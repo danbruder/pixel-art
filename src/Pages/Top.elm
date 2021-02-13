@@ -112,6 +112,20 @@ view model =
 body model =
     div []
         [ Css.Global.global globalStyles
+        , p
+            [ css
+                [ flex
+                , uppercase
+                , text_gray_700
+                , text_sm
+                , p_3
+                , font_bold
+                , bg_gray_100
+                , border_b
+                , border_gray_300
+                ]
+            ]
+            [ text "Delete and create the boxes, by Paul" ]
         , div
             [ css
                 [ w_full
