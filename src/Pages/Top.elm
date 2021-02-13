@@ -153,7 +153,19 @@ body model =
                     ]
                     [ text "Delete" ]
                 ]
-            , div [] [ viewColorPicker model ]
+            , div
+                [ css
+                    [ flex
+                    , items_center
+                    , uppercase
+                    , text_gray_500
+                    , font_bold
+                    , text_xs
+                    ]
+                ]
+                [ p [] [ text "Color Picker" ]
+                , viewColorPicker model
+                ]
             ]
         , div
             [ css
